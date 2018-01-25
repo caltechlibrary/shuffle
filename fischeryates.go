@@ -20,6 +20,10 @@ import (
 	"math/rand"
 )
 
+const (
+	Version = `v0.0.1`
+)
+
 // NOTE: You need to initialize your random number generator, e.g.
 //    random := rand.New(rand.NewSource(time.Now().UnixNano())
 // Before calling one of the shuffle functions.
