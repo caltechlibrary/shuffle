@@ -2,7 +2,8 @@
 # shuffle
 
 The _shuffle_ package implements the Fischer/Yates algorithm in Go for shuffling arrays. This may become
-obsolete in Go after v1.10.x as there is discussion about adding this to a standard library package.
+obsolete in Go after v1.10.x as there is discussion about adding an implementation of Fischer/Yates
+to a standard library package.
 
 This version implements shuffle for arrays of strings and arrays of ints. Below is a demo of library.
 
