@@ -16,27 +16,6 @@
 //
 package shuffle
 
-import (
-	"math/rand"
+const (
+	Version = `v0.0.1`
 )
-
-// NOTE: You need to initialize your random number generator, e.g.
-//    random := rand.New(rand.NewSource(time.Now().UnixNano())
-// Before calling one of the shuffle functions.
-// This package maybe obsolete after go v1.10.x
-
-// Strings shuffles an array of strings in place.
-func Strings(a []string, random *rand.Rand) {
-	for i := len(a) - 1; i > 0; i-- {
-		j := random.Intn(i + 1)
-		a[i], a[j] = a[j], a[i]
-	}
-}
-
-// Ints shuffles an array of ints in place.
-func Ints(a []int, random *rand.Rand) {
-	for i := len(a) - 1; i > 0; i-- {
-		j := random.Intn(i + 1)
-		a[i], a[j] = a[j], a[i]
-	}
-}
